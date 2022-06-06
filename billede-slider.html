@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <title>Missing people</title>
+        <link rel="stylesheet" href="billede-slider.css".css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div id="opbygning">
+        <section id="konfigurator">
+            <section id="logoogoverskrift">
+                <a><img src="Wordmark-1-sort.png" id="logo"></a>
+                <h1>Konfigurator</h1>
+            </section>
+            <section id="pilevenstre">
+                <a onclick="skiftVenstre1()"><img src="pilvenstre.png" class="forstepil" id="vpil1"></a>
+            </section>
+            <section id="sager">
+                <img id="sag1">
+            </section>
+            <section id="pilehojre">
+                <a onclick="skiftHojre1()"><img src="pilhojre.png" class="forstepil" id="hpil1"></a>
+            </section>
+        </section>
+    </div>
+</body>
+</html>
+<script>
+    // Sager //
+    var sagBilledArray = ["FORSVUNDET-LAND.png", "FORSVUNDET-VAND.png"];
+    document.getElementById("sag1").src = sagBilledArray[0];
+    var i = 0;
+    function skiftHojre1() {
+        i++;
+        if (i > 1) {
+            i = 0;
+        }
+        document.getElementById("sag1").src = sagBilledArray[i];
+    }
+    function skiftVenstre1() {
+        i--;
+        if (i < 0) {
+            i = 1;
+        }
+        document.getElementById("sag1").src = sagBilledArray[i];
+    }
+</script>

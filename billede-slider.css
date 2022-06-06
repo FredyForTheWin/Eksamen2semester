@@ -1,0 +1,211 @@
+/* RESET */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1.1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;   
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content:''; content:none;
+
+}
+/*  END RESET */
+/* FORSIDE CSS */
+body {
+    font-family: 'Montserrat';
+    background-color: #dadedf;
+    color: #556672;
+}
+
+#forside section {
+    text-align: center;
+}
+
+#forside img {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    margin-top: 5em;
+}
+
+#forside h1 {
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+#oversttekst {
+    margin-bottom: 1.4em;
+    font-size: 1.6em;
+}
+
+#nedersttekst {
+    margin-bottom: 2em;
+    font-size: 1.6em;
+}
+
+#forside a {
+    font-size: 2em;
+    border: 3px solid white;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 8px;
+    color: white;
+    background-color: #996e23;
+}
+/* FORSIDE CSS SLUT */
+
+/* Konfigurator CSS START */
+#konfigurator h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+#logoogoverskrift {
+    grid-area: logo;
+}
+
+#pilevenstre {
+    width: 15%;
+    margin: auto;
+}
+
+#pilehojre {
+    width: 15%;
+    margin: auto;
+}
+
+#vpil1 {
+    grid-area: pilv1;
+}
+
+#sag1 {
+    grid-area: varer1;
+}
+
+#hpil1 {
+    grid-area: pilh1;
+}
+
+#konfigurator {
+    grid-area: konfig;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "logo logo logo"
+        "pilv1 vare1 pilh1";
+}
+
+#tilbehortekst {
+    grid-area: tbt;
+}
+
+#tilbehorpris {
+    grid-area: tbp;
+}
+
+#oversigt {
+    grid-area: oversigt;
+}
+
+#valgt {
+    grid-area: valg;
+    background-color: white;
+    opacity: 0.9;
+    position: fixed;
+    left: 2.5%;
+    top: 10%;
+    color:#996e23;
+    text-align: center;
+    border-radius: 15px;
+    border: 3px solid #996e23;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "oversigt oversigt"
+        "tbt tbp";
+}
+
+#valgt h2 {
+    margin-top: 1em;
+    margin-bottom: .6em;
+    font-size: 2em;
+}
+
+#valgt p {
+    margin-bottom: 1px;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#pilevenstre img {
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+#pilehojre img {
+    width: 100%;
+    margin-bottom: 1.2em;
+    margin-bottom: 150px;
+}
+
+.forstepil {
+    margin-top: 4em;
+}
+
+#logo {
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    margin-top: 1em;
+}
+
+#opbygning {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "valg konfig .";
+}
+
+#raavarer button {
+    font-size: 1.6em;
+    border: 3px solid white;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 8px;
+    color: white;
+    background-color: #996e23;
+}
+
+#sager img {
+    width: 100%;
+}
+
+/* Konfigurator CSS SLUT */
