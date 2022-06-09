@@ -33,49 +33,15 @@ body {
     color: #556672;
 }
 
-#forside section {
-    text-align: center;
-}
-
-#forside img {
-    width: 20%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3em;
-    margin-top: 5em;
-}
-
-#forside h1 {
-    margin-bottom: 1em;
-    font-size: 2em;
-}
-
-#oversttekst {
-    margin-bottom: 1.4em;
-    font-size: 1.6em;
-}
-
-#nedersttekst {
-    margin-bottom: 2em;
-    font-size: 1.6em;
-}
-
-#forside a {
-    font-size: 2em;
-    border: 3px solid white;
-    border-radius: 15px;
-    text-decoration: none;
-    cursor: pointer;
-    padding: 8px;
-    color: white;
-    background-color: #996e23;
+nav {
+    background-color: #556672;
+    padding: .4em;
 }
 /* FORSIDE CSS SLUT */
-
-/* Konfigurator CSS START */
-#konfigurator h1 {
+/* Sektion CSS START */
+#sektion h1 {
     font-size: 3em;
+    margin-top: .4em;
     margin-bottom: 1em;
 }
 
@@ -105,7 +71,7 @@ body {
     grid-area: pilh1;
 }
 
-#konfigurator {
+#sektion {
     grid-area: konfig;
     text-align: center;
     display: grid;
@@ -116,68 +82,23 @@ body {
         "pilv1 vare1 pilh1";
 }
 
-#tilbehortekst {
-    grid-area: tbt;
-}
-
-#tilbehorpris {
-    grid-area: tbp;
-}
-
-#oversigt {
-    grid-area: oversigt;
-}
-
-#valgt {
-    grid-area: valg;
-    background-color: white;
-    opacity: 0.9;
-    position: fixed;
-    left: 2.5%;
-    top: 10%;
-    color:#996e23;
-    text-align: center;
-    border-radius: 15px;
-    border: 3px solid #996e23;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-        "oversigt oversigt"
-        "tbt tbp";
-}
-
-#valgt h2 {
-    margin-top: 1em;
-    margin-bottom: .6em;
-    font-size: 2em;
-}
-
-#valgt p {
-    margin-bottom: 1px;
-    font-size: 1.5em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
 #pilevenstre img {
-    width: 100%;
+    width: 80%;
     margin-bottom: 150px;
 }
 
 #pilehojre img {
-    width: 100%;
+    width: 80%;
     margin-bottom: 1.2em;
     margin-bottom: 150px;
 }
 
 .forstepil {
-    margin-top: 4em;
+    margin-top: 5em;
 }
 
 #logo {
-    width: 35%;
+    width: 18%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -185,27 +106,28 @@ body {
     margin-top: 1em;
 }
 
-#opbygning {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "valg konfig .";
-}
-
-#raavarer button {
-    font-size: 1.6em;
-    border: 3px solid white;
-    border-radius: 15px;
-    text-decoration: none;
-    cursor: pointer;
-    padding: 8px;
-    color: white;
-    background-color: #996e23;
-}
-
 #sager img {
-    width: 100%;
+    width: 70%;
 }
 
-/* Konfigurator CSS SLUT */
+button {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+    border:0.1em solid #556672;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    background-color: #DADEDF;
+    padding:0.35em 1.2em;
+    color: #556672;
+    font-size: 1.4em;
+}
+
+a:link {
+    text-decoration: none;
+}
+/* Sektion CSS SLUT */
